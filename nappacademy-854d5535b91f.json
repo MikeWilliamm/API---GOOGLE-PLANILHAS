@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nappacademy",
+  "private_key_id": "854d5535b91fcc1c6a6b30d3b47cf7400d903c77",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCTx+Ys7X3Gbw8L\nAw/MZcjszKwtOlt7r5k699ajq+e9ucyjqul2xP16AEMRcBwM2ov6cV+UPVplA+45\nBPfDWpO6nxDfQbEgPPOM51/xf1PHRJz1/iJcwRJVZihpQ8ekMD7iBiOqsDEtXyVP\nlFyZuf0wtaBxjeZb9fXP+8w7S+0zGfa0+8pOXO1hr5t4LEWazdry+ur5ii3Z47fn\nV2I6kQ2y+DleqVpFLVVWGtLsBAtLZ3rFTugFzPTCfsTV3wFVvYzLdxgdShy5Kk9F\n54/WtYwjr/m/AwF8TI0hhNWhusfP30azEDvL2l2FMT88l8Mg0754FPsF1TJKkX7r\n2nJIqQMjAgMBAAECggEAPVd/LEwCZtFnsZ76OlJPtjd5CqcMHUm09Zy1nCe5oG/U\nyWUi1pmLS857CGx8QDuhWfogffR/pqmcg0+UFqNs6cyoILvwbZzPTcAm+6PqHy9U\nZemw0saTuR4YDSXE41rhZ0m8GVhceWRipOdFDsx8k/D4YdpQcgClIcl3q29nTMvK\n36YlISFfViYZ+DOXHyjYfIDupQ6sP44UhWJdhq9Krxn74pNPWovrd8lkrsBXE7ag\nl4vlYbaKvdRFlxspSwiw4qtde9xsK/4eqeSlJMnE4MI9qU1KhnczDV8zV5KRAnjQ\nYzMcAVJU0JoZu02P29+/GURl/yorY82CgeABesqeDQKBgQDP0EJiD9Elfmc7+PmM\nWQKeoTz1YWcg3jPpFUgrd2nbQ33f3pi0t0160wsfhhIm4EkGCDQyPhWsVdt3yYpn\nCA31q8F5ynnOUabsd5rzWNjm/FTu3pFS0ess8astrws96HyER7O7MTyfWFRo42If\n/tD4Yvk2YhbtNWRgkYxYPH4FDQKBgQC2DB8RGZmkkxO/g7z4l6bBFbZ+0a8lv+TJ\n4V3kRg0JcuRy81Z4DjaGTevWYqMJw4KoHmGfvVY6Q0AKCWks17+PkFUlDCyb//dW\nLUDor1CvYy/TRPVpsEAdLHb5l2UQEw/TWBkUGdbInev9Zzbgvo3tiTwXRLWOH3yI\nA/os0tB87wKBgFxriDpIQoFkN9EqJwFNzKZzmsKeMNkjOP7d4hzCnKdQ2rgnLM6h\n/qkzFm1MmOIFOTSfjWcSyVy9Sj95uD2eDWdGnWLms0kYcx4TCyxSRRRk//jDrumg\nRfDVAYXtpRhBPq8tnDcR7J4JEHEdPtRv5MuyaJbRBNU1u5Be6oWLUZg5AoGATIIl\noFMo/kCNwSRFjBh4DZfpfbz0JiJSrgGYKzLBkeIGXsUj5wraIXGoFw6XRKg1RiCW\nmMLC9XOD+3PfDuiRam2XSx2ltd5KfZ5BNElR2JQP6nOFzGg1Wc1xJw5Ye/v237Sb\nvZXqbZ/pKTNynduX3GebqI/I2bUj6in5v1LOKmMCgYAyWN78z8bi1BGUVE0V4N2t\n9LlG1GGHZHqb+YpWgwzQa8owNTnRIFgyaQlS+qVK6lh5AJi0PawrZ2QMtmdIL+vM\n3TWdyauVcEa+foqTQwfHt5EitaT5WO26CYr4msckCMxWvIOXdNnb4U09RNqCf2QT\nH8mN2vYDlspXJPPgMzMCQw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "nappacademy@nappacademy.iam.gserviceaccount.com",
+  "client_id": "118086861934177201561",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nappacademy%40nappacademy.iam.gserviceaccount.com"
+}
