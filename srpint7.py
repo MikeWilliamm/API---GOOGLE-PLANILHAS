@@ -64,7 +64,7 @@ def transforma(df):
     
     return df
 
-#Função que ira inserir o DataFrame tratado no banco de dados como uma tabela
+
 def importa_DB(df):
 
     #df = pd.read_csv(r'C:\Users\lucas\Desktop\Mike\Tarefas\002- API\soma_produto_in_estados.csv', sep = ';', encoding='utf-8') - Exemplo importação de csv pra DF
