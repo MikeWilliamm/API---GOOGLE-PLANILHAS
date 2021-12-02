@@ -4,16 +4,15 @@ import gspread
 from numpy.core.defchararray import index
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
-import numpy as np
-import os as o
-from pandas.core.arrays import integer
-import psycopg2 
 import time
 from sqlalchemy import create_engine
 import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import smtplib, ssl
+import smtplib
+import smtplib
+import email.message
+import time
+
+start_time = time.time()
 
 #Acessa planilha online e transforma em um Data Frame
 def planilha_to_df(): 
@@ -64,6 +63,27 @@ def transforma(df):
     
     return df
 
+def send_email(frase, tempo):
+    arq = open(r"C:\Users\lucas\Desktop\Mike\python\NappAcademy\api\\senha.txt") 
+    senha = arq.readlines() #senha armazena em txt local 
+
+    corpo_email = f'''<p>{frase}<p>
+    <p>Tempo de execução {round(tempo,5)} segundos<p>''' #E-mail para ser enviado
+
+    msg = email.message.Message()
+    msg['Subject'] = 'API - GOOGLE'
+    msg['From'] = 'mike.william@nappsolutions.com' #Remetente
+    msg['To'] = 'mike.william@nappsolutions.com'    #destinatário
+    password = f'{str(senha[0])}' #Senha do Email
+    msg.add_header('Content-Type', 'text/html') 
+    msg.set_payload(corpo_email )
+    s = smtplib.SMTP('smtp.gmail.com: 587')
+    s.starttls()
+    # Login Credentials for sending the mail
+    s.login(msg['From'], password)
+    s.sendmail(msg['From'], [msg['To']], msg.as_string().encode('utf-8'))
+    print('Email enviado')
+
 
 def importa_DB(df):
 
@@ -80,21 +100,35 @@ def importa_DB(df):
 
 #Função Main
 def main():
-    df = planilha_to_df()
-    
-    
-    #print(df.shape) 122 x 13
-    df = transforma(df)
+    frase = ''
+    try: 
+        df = planilha_to_df()
+        
+        
+        #print(df.shape) 122 x 13
+        df = transforma(df)
 
 
-    importa_DB(df)
-    #print(df)
+        importa_DB(df)
+        print(df)
+
+        frase = 'SUCESSO ao executar script!'
+    except:
+        frase = 'ERRO ao executar script!'
+    end_time = time.time()
+
+    tempo = end_time - start_time
+
+    send_email(frase, tempo)
+
+    print(frase)
 main()
 
 
 #Fontes de estudo:
 #https://ichi.pro/pt/como-ativar-o-acesso-do-python-ao-planilhas-google-250853149332571 - chave
 #https://pt.linkedin.com/pulse/manipulando-planilhas-do-google-usando-python-renan-pessoa - configurando script
+#https://www.hashtagtreinamentos.com/enviar-email-gmail-python - send-email
 
 #Criar um projeto Google Cloud Plataform: https://console.developers.google.com/project
 #Link das Planilhas: https://docs.google.com/spreadsheets/u/0/
